@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+html {
+  margin: 0 !important;
+  font-size: 62.5%; //1rem = 10px; 10px/16px - 62.5%
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%; //1rem = 7px
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

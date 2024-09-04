@@ -1,0 +1,25 @@
+.search-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+.hero-section {
+  background-color: #efefef;
+  &__img {
+    height: 60rem;
+  }
+
+  &__left {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,24 @@
+.btn {
+  text-transform: uppercase;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  &--subscribe {
+    background-color: #367a51 !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 1.5rem 2rem !important;
+    border-radius: 1rem !important;
+    transition: all 0.3s !important;
+    font-size: 1.6rem !important;
+    will-change: transform;
+    box-shadow: 0.2rem 0.6rem 1rem rgba($color-dark, 0.15);
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0.2rem 1rem 1rem rgba($color-dark, 0.15);
+    }
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}

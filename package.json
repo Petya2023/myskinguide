@@ -1,0 +1,27 @@
+{
+  "name": "myskinguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "myskinguide"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "cssnano": "^7.0.5",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.8"
+  }
+}
