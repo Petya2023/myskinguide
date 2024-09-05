@@ -14,6 +14,9 @@ get_header();
             alt="Жена, нанасяща продукт върху кожата си.">
     </div>
 </div>
+<div class="overlay-box">
+    <div class="overlay"></div>
+</div>
 <div class="search-bar search-bar-js">
     <div class="search-bar-outter">
         <i class="fa-solid fa-magnifying-glass search-icon search-icon-js"></i>
@@ -22,3 +25,6 @@ get_header();
     <i class="cross-icon">&times;</i>
 </div>
 </header>
+<?php
+get_footer();
+?>
