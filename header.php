@@ -9,16 +9,17 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <nav class="nav">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center my-5">
-                <a href="">
-                    <img src="<?php echo get_theme_file_uri('assets/src/images/logo.png'); ?>" alt="" class="logo">
-                </a>
-                <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <a href="" class="btn btn--subscribe ms-5">Абонирай се</a>
+    <header class="hero-section">
+        <nav class="nav navigation">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center nav-inner">
+                    <a href="">
+                        <!-- <img src="<?php echo get_theme_file_uri('assets/src/images/logo.png'); ?>" alt="" class="logo"> -->
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass search-icon search-icon-js"></i>
+                        <a href="" class="btn btn--subscribe ms-5">Абонирай се</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
