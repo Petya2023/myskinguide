@@ -7,16 +7,19 @@ searchIcon.addEventListener("click", openSearchBar);
 crossIcon.addEventListener("click", closeSearchBar);
 overlayBox.addEventListener("click", closeSearchBar);
 
+const tabLand = window.matchMedia("(max-width: 1200px)");
+
 function openSearchBar() {
   overlayBox.style.opacity = "1";
   overlayBox.style.visibility = "visible";
-  searchBar.style.opacity = "1";
-  searchBar.style.visibility = "visible";
+  searchBar.style.right = "0";
 }
 
 function closeSearchBar() {
   overlayBox.style.opacity = "0";
   overlayBox.style.visibility = "hidden";
-  searchBar.style.opacity = "0";
-  searchBar.style.visibility = "hidden";
+  searchBar.style.right = "-35%";
+  if (tabLand.matches) {
+    searchBar.style.right = "-45%";
+  }
 }
