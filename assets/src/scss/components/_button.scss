@@ -5,7 +5,10 @@
   justify-content: center !important;
   color: $color-dark;
   font-size: 1.6rem;
-  font-weight: 500;
+
+  &--subscribe-2 {
+    font-weight: 600;
+  }
 
   &--subscribe {
     background-color: $color-primary !important;
