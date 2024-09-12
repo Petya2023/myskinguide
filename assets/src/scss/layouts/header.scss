@@ -5,14 +5,15 @@ header {
 .navigation {
   position: relative;
   background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .nav-inner {
-  height: 15vh;
+  height: 13vh;
 }
 
 .row {
-  height: 85vh;
+  height: 87vh;
 }
 
 .search-icon {
@@ -96,7 +97,7 @@ header {
 }
 
 .hero-section {
-  background-color: #eaeaea;
+  background-color: #fff;
   &__right {
     // position: relative;
     height: 100%;
@@ -118,7 +119,67 @@ header {
   }
 }
 
+.nav-links {
+  height: 100%;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .nav-link {
   font-size: 1.6rem;
-  color: #333;
+  font-weight: 300;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: inline-block;
+  transition: all 0.3s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+
+  // &__link {
+  //   color: $color-dark;
+  //   transition: 0.3s;
+  //   &:hover {
+  //     color: $color-primary;
+  //   }
+  // }
+
+  &:hover .dropdown__content {
+    display: block;
+    // @include respond(tab-port) {
+    //   display: none;
+    // }
+  }
+
+  &:hover {
+    border-bottom: 2px solid #1e96ba;
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-top: 1px solid #eaeaea;
+    top: 13vh;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    transition: all 3s;
+    border-radius: 0.5rem;
+  }
 }

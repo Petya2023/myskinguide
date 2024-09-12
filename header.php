@@ -13,12 +13,32 @@
         <nav class="nav navigation">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center nav-inner">
-                    <a href="">
+                    <a href="">ЛОГО
                         <!-- <img src="<?php echo get_theme_file_uri('assets/src/images/logo.png'); ?>" alt="" class="logo"> -->
                     </a>
-                    <ul class="d-flex">
-                        <li><a href="" class="nav-link me-4">Съставки</a></li>
-                        <li><a href="" class="nav-link">Типове кожа</a></li>
+                    <ul class="nav-links d-flex align-items-center">
+                        <div class="dropdown me-5">
+                            <li class="nav-item"><a href="" class="nav-link">Съставки</a></li>
+                            <div class="dropdown__content">
+                                <?php wp_list_categories(
+                                    array(
+                                        'title_li' => '',
+                                        'child_of' => 8,
+                                    )
+                                ); ?>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li class="nav-item"><a href="" class="nav-link">Рутини</a></li>
+                            <div class="dropdown__content">
+                                <?php wp_list_categories(
+                                    array(
+                                        'title_li' => '',
+                                        'child_of' => 8,
+                                    )
+                                ); ?>
+                            </div>
+                        </div>
                     </ul>
                     <div class="d-flex align-items-center">
                         <i class="fa-solid fa-magnifying-glass search-icon search-icon-js"></i>

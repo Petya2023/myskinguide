@@ -1,0 +1,17 @@
+.newsletter {
+  background-color: #1e96ba;
+  &__box {
+    width: 40rem;
+  }
+  &-input {
+    padding: 1.5rem;
+    border: none;
+    display: inline !important;
+    width: 90%;
+    font-size: 1.6rem;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+}
