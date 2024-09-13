@@ -1,3 +1,6 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
 header {
   height: 100vh;
 }
@@ -49,7 +52,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(#333, 0.8);
+  background-color: rgba($color-dark, 0.8);
   z-index: 98;
   // backdrop-filter: blur(10px);
 }
@@ -89,7 +92,7 @@ header {
 .search-bar-outter {
   margin: 0 3rem;
   padding: 0 1rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid $color-dark;
 }
 
 .cross-icon {
@@ -132,7 +135,7 @@ header {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #2c2c2c;
+  color: $color-dark;
   text-transform: uppercase;
   height: 100%;
   display: flex;
@@ -163,7 +166,7 @@ header {
   }
 
   &:hover {
-    border-bottom: 2px solid #1e96ba;
+    border-bottom: 2px solid $color-primary;
   }
 
   &__content {

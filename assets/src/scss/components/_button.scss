@@ -8,7 +8,7 @@
   white-space: nowrap;
 
   &--subscribe {
-    background-color: $color-primary !important;
+    background-color: $color-dark !important;
     border: none !important;
     color: #fff !important;
     padding: 1.5rem 2rem !important;
@@ -19,7 +19,7 @@
     &:hover {
       // transform: translateY(-2px);
       // box-shadow: 0.2rem 1rem 1rem rgba($color-dark, 0.15);
-      opacity: 0.85;
+      opacity: 0.8;
     }
     &:active {
       transform: scale(0.97);
