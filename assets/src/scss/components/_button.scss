@@ -5,10 +5,7 @@
   justify-content: center !important;
   color: $color-dark;
   font-size: 1.6rem;
-
-  &--subscribe-2 {
-    font-weight: 600;
-  }
+  white-space: nowrap;
 
   &--subscribe {
     background-color: $color-primary !important;
@@ -17,16 +14,23 @@
     padding: 1.5rem 2rem !important;
     border-radius: 0.7rem !important;
     transition: all 0.3s !important;
-    font-size: 1.6rem !important;
     will-change: transform;
     // box-shadow: 0.2rem 0.6rem 1rem rgba($color-dark, 0.15);
     &:hover {
       // transform: translateY(-2px);
       // box-shadow: 0.2rem 1rem 1rem rgba($color-dark, 0.15);
-      opacity: 0.8;
+      opacity: 0.85;
     }
     &:active {
       transform: scale(0.97);
     }
+  }
+
+  &--subscribe-2 {
+    font-weight: 600 !important;
+    color: $color-dark !important;
+    cursor: pointer;
+    padding: 0 !important;
+    background-color: transparent !important;
   }
 }

@@ -1,25 +1,52 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
 .newsletter {
   background-color: #1e96ba;
   &__left {
-    width: 60rem;
+    // width: 60rem;
+    margin-right: 10rem;
+    @include respond(tab-land) {
+      margin-right: 0;
+      text-align: center;
+      max-width: 49rem;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    @include respond(tab-land) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 
   &__right {
+    padding: 3rem 0 1rem 0;
     border-bottom: 2px solid #2c2c2c;
+    @include respond(tab-land) {
+      margin-top: 2rem;
+      max-width: 40rem;
+    }
   }
+
   &-input {
-    padding: 1.5rem 0;
+    margin-right: 1rem;
+    padding: 1.5rem 0 1.5rem 0;
     border: none;
+    font-weight: 600;
     display: inline !important;
-    width: 90%;
+    width: 100%;
     background-color: transparent;
     &:focus {
       outline: none;
     }
     &::placeholder {
-      color: #2c2c2c;
+      color: $color-dark;
       opacity: 1;
-      font-size: 1.6rem;
+      font-size: 1.6rem !important;
       font-weight: 600;
     }
   }

@@ -28,13 +28,15 @@ get_header();
 <section>
     <div class="newsletter py-5 ">
         <div class="container">
-            <div class="newsletter__box d-flex justify-content-around">
+            <div class="newsletter__box py-5">
                 <div class="newsletter__left">
                     <h3> Да, искам да знам за всички актуални новини, свързани с My Skin Guide.</h3>
                 </div>
-                <div class="newsletter__right d-flex">
-                    <input class="newsletter-input" type="email" name="email" placeholder="Имейл">
-                    <a href="" class="btn btn--subscribe-2">Абонирай се</a>
+                <div class="newsletter__right">
+                    <form action="https://formsubmit.co/9a9274b8804fb31f31fa316e3e002ac7" method="POST" class="d-flex">
+                        <input class="newsletter-input" type="email" name="email" placeholder="Имейл" required>
+                        <input type="submit" class="btn btn--subscribe btn--subscribe-2" value="Изпрати">
+                    </form>
                 </div>
             </div>
         </div>
