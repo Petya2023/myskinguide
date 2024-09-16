@@ -13,7 +13,7 @@
         <nav class="nav navigation">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center nav-inner">
-                    <a href="">ЛОГО
+                    <a href="<?php echo site_url(); ?>">ЛОГО
                         <!-- <img src="<?php echo get_theme_file_uri('assets/src/images/logo.png'); ?>" alt="" class="logo"> -->
                     </a>
                     <ul class="nav-links d-flex align-items-center">
@@ -42,7 +42,7 @@
                     </ul>
                     <div class="d-flex align-items-center">
                         <i class="fa-solid fa-magnifying-glass search-icon search-icon-js"></i>
-                        <a href="" class="btn btn--subscribe ms-5">Абонирай се</a>
+                        <button type="button" href="" class="btn btn--subscribe ms-5">Абонирай се</button>
                     </div>
                 </div>
             </div>

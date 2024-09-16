@@ -5,10 +5,11 @@
             <div class="footer__left">
                 <a href="" class="pt-5">ЛОГО</a>
                 <div class="social-media-icons my-5">
-                    <a href=""><i class="fa-brands fa-facebook me-4"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram me-4"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin me-4"></i></a>
-                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook me-4"></i></a>
+                    <a href="https://www.instagram.com/myskinguide.eu" target="_blank"><i
+                            class="fa-brands fa-instagram me-4"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin me-4"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
