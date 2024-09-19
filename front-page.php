@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="row">
+<div class="row js-nav">
     <div class="hero-section__left col">
         <div class="hero-section__text">
             <h1>Заглавие</h1>
@@ -19,8 +19,11 @@ get_header();
 </div>
 <div class="search-bar search-bar-js">
     <div class="search-bar-outter">
-        <i class="fa-solid fa-magnifying-glass search-icon search-icon-js"></i>
-        <input class="search-bar-input" type="text" placeholder="Какво търсиш? (напр. ретинол)">
+        <form action="">
+            <i class="fa-solid fa-magnifying-glass search-icon search-icon-js"></i>
+            <input name="search-bar-input" class="search-bar-input" type="text" autocomplete="on"
+                placeholder="Какво търсиш? (напр. ретинол)">
+        </form>
     </div>
     <i class="cross-icon">&times;</i>
 </div>
@@ -34,8 +37,10 @@ get_header();
                 </div>
                 <div class="newsletter__right">
                     <form action="https://formsubmit.co/9a9274b8804fb31f31fa316e3e002ac7" method="POST" class="d-flex">
-                        <input class="newsletter-input" type="email" name="email" placeholder="Имейл" required>
-                        <input type="submit" class="btn btn--subscribe btn--subscribe-2" value="Изпрати">
+                        <input class="newsletter-input" type="email" name="email" placeholder="Имейл" required
+                            autocomplete="on">
+                        <input type="submit" class="btn btn--subscribe btn--subscribe-2" value="Изпрати"
+                            autocomplete="on">
                     </form>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+// search bar
 const searchIcon = document.querySelector(".search-icon-js");
 const searchBar = document.querySelector(".search-bar-js");
 const overlayBox = document.querySelector(".overlay-box");
@@ -18,8 +19,23 @@ function openSearchBar() {
 function closeSearchBar() {
   overlayBox.style.opacity = "0";
   overlayBox.style.visibility = "hidden";
-  searchBar.style.right = "-35%";
-  if (tabLand.matches) {
-    searchBar.style.right = "-45%";
-  }
+  searchBar.style.right = "-40%";
+  // if (tabLand.matches) {
+  //   searchBar.style.right = "-45%";
+  // }
+}
+
+// sticky nav
+// $(".js-nav").waypoint(function (direction) {
+//   if (direction == "down") {
+//     $("nav").addClass("sticky");
+//   } else {
+//     $("nav").removeClass("sticky");
+//   }
+// });
+
+//
+const dropdown = document.querySelector(".dropdown");
+if (dropdown.matches(":hover")) {
+  console.log("Hi");
 }
